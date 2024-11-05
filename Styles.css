@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);
   position: sticky;
@@ -568,7 +568,7 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     position: relative;
     z-index: 1;
