@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puertas Automáticas en Cantabria</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --purple-gradient: linear-gradient(135deg, #2D1F3D 0%, #1A1625 100%);
+            --purple-accent: #8B5CF6;
+            --purple-light: #7C3AED;
+        }
+
+        body {
+            background-color: #0F0A1A;
+            color: #E2E8F0;
+        }
+
+        /* Utility classes */
+        .gradient-bg {
+            background: var(--purple-gradient);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+        }
+
+        .feature-card {
+            background: rgba(45, 31, 61, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .glow-effect::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .glow-effect:hover::after {
+            opacity: 1;
+        }
+
+        /* Custom scrollbar */
+        .custom-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: var(--purple-accent) #1A1625;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1A1625;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: var(--purple-accent);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar">
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full bg-purple-900 text-purple-200 text-sm">
+                Especialistas en Automatización
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4">Puertas Automáticas en Cantabria</h1>
+            <p class="text-xl text-purple-200">Innovación y seguridad para espacios modernos</p>
+        </header>
+
+        <!-- Imagen Principal -->
+        <figure class="rounded-xl overflow-hidden shadow-lg mb-12 hover-scale glow-effect">
+            <img src="/api/placeholder/1200/600" alt="Puerta automática moderna" class="w-full h-auto">
+        </figure>
+
+        <!-- Badges Informativos -->
+        <section class="flex flex-wrap gap-4 mb-12 justify-center" aria-label="Información de servicios">
+            <div class="bg-purple-900 text-purple-100 px-6 py-3 rounded-full flex items-center hover-scale">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Certificación CE
+            </div>
+            <div class="bg-purple-900 text-purple-100 px-6 py-3 rounded-full flex items-center hover-scale">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Servicio 24/7
+            </div>
+            <div class="bg-purple-900 text-purple-100 px-6 py-3 rounded-full flex items-center hover-scale">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                Garantía 2 años
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <article class="prose lg:prose-xl max-w-none mb-12 text-gray-300">
+            <h2 class="text-3xl font-semibold text-purple-300 mb-6">La Excelencia en Automatización</h2>
+            <p>Con más de 15 años de experiencia en Cantabria, nos hemos consolidado como referentes en la instalación y mantenimiento de sistemas de puertas automáticas. Nuestra dedicación a la innovación y la calidad nos permite ofrecer soluciones que combinan seguridad, eficiencia y diseño.</p>
+
+            <!-- Estadísticas -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" aria-label="Estadísticas">
+                <div class="feature-card p-6 rounded-xl text-center hover-scale">
+                    <div class="text-4xl font-bold text-purple-400">500+</div>
+                    <p class="text-purple-200">Instalaciones Realizadas</p>
+                </div>
+                <div class="feature-card p-6 rounded-xl text-center hover-scale">
+                    <div class="text-4xl font-bold text-purple-400">98%</div>
+                    <p class="text-purple-200">Clientes Satisfechos</p>
+                </div>
+                <div class="feature-card p-6 rounded-xl text-center hover-scale">
+                    <div class="text-4xl font-bold text-purple-400">15+</div>
+                    <p class="text-purple-200">Años de Experiencia</p>
+                </div>
+            </section>
+        </article>
+
+        <!-- Servicios -->
+        <section class="grid md:grid-cols-2 gap-8 mb-12" aria-label="Servicios Premium">
+            <div class="gradient-bg p-6 rounded-xl hover-scale">
+                <h3 class="text-xl font-semibold text-purple-300 mb-4">Servicios Profesionales</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Instalación certificada
+                    </li>
+                    <!-- Additional items go here -->
+                </ul>
+            </div>
+            <!-- Similar structure for "Sistemas Disponibles" -->
+        </section>
+
+        <!-- CTA -->
+        <section class="gradient-bg rounded-xl p-8 text-center shadow-lg hover-scale glow-effect">
+            <h3 class="text-3xl font-bold text-white mb-4">¿Listo para automatizar?</h3>
+            <p class="text-purple-200 mb-6">Solicite una consulta gratuita y reciba un presupuesto personalizado</p>
+            <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-colors">
+                Solicitar Presupuesto
+            </button>
+        </section>
+    </main>
+</body>
+</html>
